@@ -17,7 +17,7 @@ export default function TopicCard({ title, desc, link }: TopicCardProps) {
           color="#00ffff"
           size={30}
         />
-        <p className="font-bold text-[20px] text-white">{title}</p>
+        <p className="font-bold text-[20px]">{title}</p>
       </div>
       <p className="pt-3 text-cyan-200">{desc}</p>
       <div className="self-end pt-2">
