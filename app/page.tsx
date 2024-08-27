@@ -1,4 +1,11 @@
 import TopicCard from "@/components/TopicCard";
+import {
+  RiJavascriptFill,
+  FaPython,
+  SiCplusplus,
+  FaLaptopCode,
+  FaRust,
+} from "@/lib/icons";
 
 export default function Home() {
   return (
@@ -13,12 +20,41 @@ export default function Home() {
           and related areas
         </p>
         <p className="text-3xl font-bold py-10">Topics</p>
-        <div className="flex justify-center">
-          <TopicCard
-            title="JavaScript"
-            desc="JavaScript is a versatile, high-level programming language that is widely used for web development."
-            link="/javascript"
-          />
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-col md:flex-row gap-5 justify-center">
+            <TopicCard
+              title="JavaScript"
+              desc="JavaScript is a versatile, high-level programming language widely used for web development."
+              link="/javascript"
+              Icon={RiJavascriptFill}
+            />
+            <TopicCard
+              title="Python"
+              desc="Python is a versatile, high-level programming language known for its simplicity and readability."
+              link="/python"
+              Icon={FaPython}
+            />
+            <TopicCard
+              title="C++"
+              desc="C++ is a programming language known for its versatility in system/software development."
+              link="/c++"
+              Icon={SiCplusplus}
+            />
+          </div>
+          <div className="flex flex-col md:flex-row gap-5 justify-center ">
+            <TopicCard
+              title="Rust"
+              desc="Rust is a programming language focused on safety and performance."
+              link="/rust"
+              Icon={FaRust}
+            />
+            <TopicCard
+              title="Web development"
+              desc="Web development is creating and managing websites and web applications."
+              link="/web"
+              Icon={FaLaptopCode}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -1,20 +1,21 @@
 import Link from "next/link";
-import { RiJavascriptFill } from "react-icons/ri";
 import { IoChevronForwardCircleSharp } from "react-icons/io5";
 import { Button } from "./ui/button";
+import { IconType } from "react-icons";
 
 interface TopicCardProps {
   title: string;
   desc: string;
   link: string;
+  Icon: IconType;
 }
 
-export default function TopicCard({ title, desc, link }: TopicCardProps) {
+export default function TopicCard({ title, desc, link, Icon }: TopicCardProps) {
   return (
-    <div className="flex flex-col border-2 border-cyan-500 rounded-md p-5 w-full md:w-64 text-left">
+    <div className="flex flex-col border-2 border-cyan-500 rounded-md p-5 w-full md:w-72 text-left">
       <div className="flex gap-2 items-center ">
-        <RiJavascriptFill
-          color="#00ffff"
+        <Icon
+          color="#dddddd"
           size={30}
         />
         <p className="font-bold text-[20px]">{title}</p>
