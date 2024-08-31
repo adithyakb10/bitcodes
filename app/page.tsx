@@ -33,18 +33,21 @@ export default function Home() {
                 desc="JavaScript is a versatile, high-level programming language widely used for web development."
                 link="/javascript"
                 Icon={RiJavascriptFill}
+                active={true}
               />
               <TopicCard
                 title="Python"
                 desc="Python is a versatile, high-level programming language known for its simplicity and readability."
                 link="/python"
                 Icon={FaPython}
+                active={false}
               />
               <TopicCard
                 title="C++"
                 desc="C++ is a programming language known for its versatility in system/software development."
                 link="/c++"
                 Icon={SiCplusplus}
+                active={false}
               />
             </div>
             <div className="flex flex-col md:flex-row gap-5 self-start ">
@@ -53,6 +56,7 @@ export default function Home() {
                 desc="Rust is a programming language focused on safety and performance."
                 link="/rust"
                 Icon={FaRust}
+                active={false}
               />
             </div>
           </div>
@@ -64,18 +68,21 @@ export default function Home() {
                 desc="Web development is creating and managing websites and web applications."
                 link="/web"
                 Icon={FaLaptopCode}
+                active={false}
               />
               <TopicCard
                 title="Cyber Security"
                 desc="Cybersecurity protects systems and data from digital threats."
                 link="/cybersecurity"
                 Icon={RiShieldCheckLine}
+                active={false}
               />
               <TopicCard
                 title="AI/ML"
                 desc="AI/ML enables machines to learn and make decisions from data."
                 link="/ai"
                 Icon={AiOutlineRobot}
+                active={false}
               />
             </div>
           </div>

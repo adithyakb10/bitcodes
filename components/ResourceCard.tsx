@@ -3,17 +3,12 @@ import React from "react";
 import { Button } from "./ui/button";
 import { FaForward } from "react-icons/fa6";
 
-function ResourceCard() {
-  let links = [
-    "https://www.udemy.com/course/the-complete-javascript-course/?couponCode=SKILLS4SALEA",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "https://www.w3schools.com/js/DEFAULT.asp",
-  ];
-  let title = [
-    "The Complete JavaScript Course 2024",
-    "MDN Web Docs",
-    "W3 Schools",
-  ];
+interface ResourceCardProps {
+  links: string[];
+  titles: string[];
+}
+
+function ResourceCard({ links, titles }: ResourceCardProps) {
   return (
     <div className="flex flex-col border-2 border-cyan-500 rounded-md px-5 pt-5 w-full md:w-[380px] text-left">
       <h1 className="font-bold text-[20px]">Resources</h1>
@@ -27,7 +22,7 @@ function ResourceCard() {
               variant="outline"
               className="w-80"
             >
-              {title[idx]}
+              {titles[idx]}
             </Button>
           </Link>
         ))}
